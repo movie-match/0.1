@@ -1,0 +1,144 @@
+.title-bar{
+	height:42px;
+	display:flex;
+	background:white;
+	padding:5px;
+	text-align:center;
+	font-weight:bold;
+	box-sizing:border-box;
+	position:fixed;
+	z-index:1000;
+	width:100%;
+	border: 0px solid black;
+}
+.app-name{
+	flex:1 1;
+	background:white;
+	color:black;
+	font-size:1.5em;
+}
+.center-container{
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	-webkit-align-items:center;
+	justify-content:center;
+	-webkit-justify-content:center;
+	height:90%;
+	background-color:white;
+	box-sizing:border-box;
+}
+
+.group-button button, .movielist-button button{
+	height:100%;
+	padding:2px;
+	background-color:white;
+	border: 0px solid black;
+	
+}
+
+.dropdown{
+	left:-100vw;
+	-webkit-transition:left 0.2s ease-in-out;
+	margin:0px;
+	background-color:none;
+	color:black;
+	max-width:30%;
+	height:100%;
+	font-size:1em;
+	border:1px solid black;
+	border-left:0px;
+	border-right:0px;
+	box-sizing:border-box;
+}
+#inviteBox{
+	border: none;
+    border-radius: 6px;
+    padding: 5px 20px;
+	margin:4px;
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;  
+	text-align:left;
+	min-width: 200;
+}
+
+.friendlist_friend{
+	color: white;
+    background: #2ecc71;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 20px;
+	margin: 4px;
+}
+
+.passive{
+	color: white;
+    background: #ecf0f1;
+}
+
+.movielist_menu{
+	right:-100vw;
+	-webkit-transition:right 0.2s ease-in-out;
+	margin:0px;
+	background-color:none;
+	color:black;
+	max-width:30%;
+	height:100%;
+	font-size:1em;
+	border:1px solid black;
+	border-left:0px;
+	border-right:0px;
+	box-sizing:border-box;
+	font-weight:bold;
+}
+
+.show-movielist_menu{
+	right:0px;
+}
+.dropdown-content-config{
+	display:block;
+	position:absolute;
+	top:0px;
+}
+.show-dropdown-content{
+	left:0px;
+}
+#friendlist_wrapper{
+	float:left;
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;  
+	text-align:left;
+}
+
+#topmoviewrapper{
+	margin:5px;	
+}
+.topmovies{
+	height:100px;
+	margin:5px;
+}
+ul{
+	margin:0px;
+}
+.dropdown ul{
+	margin:0px;
+	padding:2px;
+	list-style-type:none;
+	text-decoration: none;
+	text-align:left;
+}
+.dropdown ul li{
+	list-style-type:none;
+	text-decoration: none;
+	text-align:left;
+}
+.dropdown ul li input{
+	margin:2px;
+}
+
+button{
+	outline: none;
+	
+}
+
+.hide-element{
+	display:none;
+}

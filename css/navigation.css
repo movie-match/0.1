@@ -1,0 +1,24 @@
+.navigation{
+	position:fixed;
+	display:flex;
+	background:white;
+	color:black;
+	height:50px;
+	bottom:0px;
+	z-index:1000;
+	width:100%;
+}
+
+.nav{
+	border:0.1px solid black;
+	height:50px;
+	background:white;
+	color:black;
+	flex:1 1;	
+}
+
+.selected{
+	background:black;
+	color:white;
+}
+

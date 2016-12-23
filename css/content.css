@@ -1,0 +1,142 @@
+.movie{
+	left:0px;
+	top:20px;
+	box-sizing:border-box;
+	background-color:black;
+	height:300px;
+	margin:0px auto;
+	padding:0px;
+	width:164px;
+	position:relative;
+	text-align:center;
+	border: 0px solid white;
+	display:block;
+}
+
+.card{
+	box-sizing:border-box;
+	margin:0px auto;
+	padding:0px;
+	position:static;
+	width:100%;
+	max-width:100%;
+	max-height:100%;
+	-webkit-perspective: 2000;
+	border: 0px solid white;
+	height:246px;
+}
+
+.front{
+	box-sizing:border-box;
+	border: 0px solid white;
+	margin:0px;
+	padding:0px;
+	height:246px;
+	max-height:100%;
+	width:100%;
+	max-width:100%;
+	position:absolute;
+	z-index:200;
+	-webkit-transform: rotateY(0deg);
+	-webkit-transform-style:preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.back{
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	max-width:100%;
+	height:246px;
+	max-height:100%;
+	background-color:black;
+	color:white;
+	position:absolute;
+	border: 2px solid white;
+	z-index:100;
+	-webkit-transform: rotateY(-540deg);
+	-webkit-transform-style:preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.3s ease-in-out	
+}
+
+.card.turn .front{
+	z-index: 200;
+	-webkit-transform: rotateY(540deg);
+}
+
+.card.turn .back{
+	z-index: 300;
+	-webkit-transform: rotateY(0deg);
+}
+
+.buttonbox{
+	margin:0px auto;
+	text-align:center;
+	width:164px;
+	display:flex;
+	background-color:none;
+}
+.buttonbox button{
+	width:100%;
+	height:30px;
+	
+}
+
+.watch-button,.watchnot-button,.dislike-button,.like-button{
+}
+.watch-button,.watchnot-button{
+	flex:1 1;
+	position:relative;
+	
+}
+.dislike-button, .like-button{
+	flex:0.5 0.5;
+	position:relative;
+	top:-246px;
+	
+}
+.empty-space-button{
+	flex:0.0 0.0;
+	position:relative;
+}
+.like-button button, .dislike-button button{
+	border:none;
+	background:rgba(255,255,255,0.8);
+	border-radius:15px;
+	height:30px;
+	width:30px;
+}
+
+.watch-button button,.watchnot-button button{
+	flex:1 1;
+	position:relative;
+	border-radius:15px;
+	background:rgba(255,255,255,0.8);
+}
+
+.swipe-left{
+	position:relative;
+	left:-100vw;
+	-webkit-transition: left 0.2s ease-in-out;
+}
+
+.swipe-right{
+	position:relative;
+	left:+100vw;
+	-webkit-transition: left 0.2s linear;
+}
+
+.yo{
+}
+.no{
+}
+
+.small-element{
+	height:0px;
+	-webkit-transition: height 0.2s ease-in-out;
+}
+.notransition {
+  -webkit-transition: none !important;
+}

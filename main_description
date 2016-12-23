@@ -1,0 +1,7 @@
+Movie Rating System - The movies are rated by 3 attributes: 
+	1: Likes/Dislikes of all members of a given groups with factor  +100 000 for likes and -100 000 for dislikes. 
+	2: Rating from the movie database with factor 10 000.
+	3: Popularity [1-10] with factor 100.
+	
+
+	
